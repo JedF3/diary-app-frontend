@@ -13,7 +13,7 @@ function AddEntryScreen(){
     let highlightClass = "HighlightedEmotionImages RoundedCorner"
     let defaultDateClass = "DateButton RoundedCorner";
     let highlightDateClass = "HighlightedDateButton RoundedCorner";
-    let defaultImgURL="/img/LetsAdd.png"
+    let defaultImgURL="https://res.cloudinary.com/dmqffmafb/image/upload/v1720783947/diary_app/img/ujul9hmuspjbtkbonckt.png"
     let defaultEmotionErrorClassName = "confirmWindowBackdrop hide";
     let showEmotionErrorClassName = "confirmWindowBackdrop show"
     let [anxiousClass, setAnxiousClass] = useState(defaultClass)
