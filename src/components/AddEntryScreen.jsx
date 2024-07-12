@@ -206,13 +206,13 @@ function AddEntryScreen(){
                 <div className="AddEntryQA">
                 <h2>How do we feel about today?</h2>
                 <div className="AddSelectButtons">
-                    <div className={anxiousClass} onClick={()=>{handleEmotions(0)}}><img className="EmotionImages" src="img/emotions/anxious-depressed.png"/></div>
-                    <div className={angryClass} onClick={()=>{handleEmotions(1)}}><img className="EmotionImages RoundedCorner" src="img/emotions/angry.png"/></div>
-                    <div className={sadClass} onClick={()=>{handleEmotions(2)}}><img className="EmotionImages RoundedCorner" src="img/emotions/sad.png"/></div>
-                    <div className={neutralClass} onClick={()=>{handleEmotions(3)}}><img className="EmotionImages RoundedCorner" src="img/emotions/neutral.png"/></div>
-                    <div className={happyClass} onClick={()=>{handleEmotions(4)}}><img className="EmotionImages RoundedCorner" src="img/emotions/happy.png"/></div>
-                    <div className={excitedClass} onClick={()=>{handleEmotions(5)}}><img className="EmotionImages RoundedCorner" src="img/emotions/excited.png"/></div>
-                    <div className={feelingAwesomeClass} onClick={()=>{handleEmotions(6)}}><img className="EmotionImages RoundedCorner" src="img/emotions/feelingawesome.png"/></div>
+                    <div className={anxiousClass} onClick={()=>{handleEmotions(0)}}><img className="EmotionImages" src="https://res.cloudinary.com/dmqffmafb/image/upload/v1718173193/diary_app/emotions/hbgwm8wqit95u5qtwmmz.png"/></div>
+                    <div className={angryClass} onClick={()=>{handleEmotions(1)}}><img className="EmotionImages RoundedCorner" src="https://res.cloudinary.com/dmqffmafb/image/upload/v1718173197/diary_app/emotions/j5ylqefjsfpjplx4ayfq.png"/></div>
+                    <div className={sadClass} onClick={()=>{handleEmotions(2)}}><img className="EmotionImages RoundedCorner" src="https://res.cloudinary.com/dmqffmafb/image/upload/v1718173193/diary_app/emotions/zyjqnlsvr37zhgpj2q7q.png"/></div>
+                    <div className={neutralClass} onClick={()=>{handleEmotions(3)}}><img className="EmotionImages RoundedCorner" src="https://res.cloudinary.com/dmqffmafb/image/upload/v1718173194/diary_app/emotions/blzsaitsznpbxabxxlfg.png"/></div>
+                    <div className={happyClass} onClick={()=>{handleEmotions(4)}}><img className="EmotionImages RoundedCorner" src="https://res.cloudinary.com/dmqffmafb/image/upload/v1718173196/diary_app/emotions/xazudjqrk2frxyygk4kd.png"/></div>
+                    <div className={excitedClass} onClick={()=>{handleEmotions(5)}}><img className="EmotionImages RoundedCorner" src="https://res.cloudinary.com/dmqffmafb/image/upload/v1718173197/diary_app/emotions/we3xqll5tbq6xgcurzi7.png"/></div>
+                    <div className={feelingAwesomeClass} onClick={()=>{handleEmotions(6)}}><img className="EmotionImages RoundedCorner" src="https://res.cloudinary.com/dmqffmafb/image/upload/v1718173197/diary_app/emotions/fa91b19lix2sarygubpg.png"/></div>
                 </div>
             </div>
             }/>
