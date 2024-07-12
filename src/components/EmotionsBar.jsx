@@ -57,7 +57,7 @@ function EmotionsBar(){
   let [dateForLabels, setDateforLabels] = useState(dateScope());
   let [labels, setlabels]=useState(getlabels());
   async function getPastEmotionData(){
-    const result = await axios.post("https://diary-app-backend-5dk0wdw5k-jedidiah-franciscos-projects.vercel.app/v1/entries/trackEmotions/", {}, { headers: { Authorization: `Bearer ${user.accessToken}` } })
+    const result = await axios.post("https://diary-app-backend-5dk0wdw5k-jedidiah-franciscos-projects.vercel.app/api/v1/entries/trackEmotions/", {}, { headers: { Authorization: `Bearer ${user.accessToken}` } })
     setLastWeekEntry(result.data.data);
   }
   const data = {

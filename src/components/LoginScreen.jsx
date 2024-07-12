@@ -24,7 +24,7 @@ function LoginScreen(){
     let [loginErrorMessage, setLoginErrorMessage] = useState(defaultLoginErrorMessage);
     const handleLogin=async (e, credentials)=>{
         e.preventDefault();   
-        axios.post("https://diary-app-backend-5dk0wdw5k-jedidiah-franciscos-projects.vercel.app/v1/users/login", {
+        axios.post("https://diary-app-backend-5dk0wdw5k-jedidiah-franciscos-projects.vercel.app/api/v1/users/login", {
             username: credentials.loginUsername, 
             password: credentials.password
         }).then((data)=>{

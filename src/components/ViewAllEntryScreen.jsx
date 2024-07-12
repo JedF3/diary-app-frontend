@@ -16,7 +16,7 @@ function ViewAllEntryScreen(){
     let firstRun = useRef("true");
     let navigate = useNavigate();
     async function getAllEntries(){
-        axios.post("https://diary-app-backend-5dk0wdw5k-jedidiah-franciscos-projects.vercel.app/v1/entries/", {}, {headers:{Authorization:`Bearer ${user.accessToken}`}})
+        axios.post("https://diary-app-backend-5dk0wdw5k-jedidiah-franciscos-projects.vercel.app/api/v1/entries/", {}, {headers:{Authorization:`Bearer ${user.accessToken}`}})
         .then((result)=>{
             setAllEntries(result.data.data);
         })

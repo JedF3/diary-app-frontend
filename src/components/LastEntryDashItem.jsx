@@ -16,7 +16,7 @@ function LastEntryDashItem(){
     let [displayMonth, setDisplayMonth] = useState(null);
     let [displayDay, setDisplayDay] = useState(null);
     async function getLastEntry(){
-        axios.post("https://diary-app-backend-5dk0wdw5k-jedidiah-franciscos-projects.vercel.app/v1/entries/recent/lastEntry", {}, {headers:{Authorization:`Bearer ${user.accessToken}`}})
+        axios.post("https://diary-app-backend-5dk0wdw5k-jedidiah-franciscos-projects.vercel.app/api/v1/entries/recent/lastEntry", {}, {headers:{Authorization:`Bearer ${user.accessToken}`}})
         .then((result)=>{
             setLastEntry(result.data.data[0]);
         })

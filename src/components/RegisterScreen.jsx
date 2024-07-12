@@ -20,7 +20,7 @@ function RegisterScreen(){
     let [confirmWindowClassName, setConfirmWindowClassName] = useState("confirmWindowBackdrop hide");
     const handleRegister=async (e, credentials)=>{
         e.preventDefault();   
-        axios.post("https://diary-app-backend-5dk0wdw5k-jedidiah-franciscos-projects.vercel.app/v1/users/signup", {
+        axios.post("https://diary-app-backend-5dk0wdw5k-jedidiah-franciscos-projects.vercel.app/api/v1/users/signup", {
             username: credentials.registerUsername, 
             email:credentials.email,
             password: credentials.password

@@ -24,7 +24,7 @@ function ViewEntry(){
     let [JWTError, setJWTErrorStatus] = useState(false);
     let navigate = useNavigate();
     async function getTargetEntry(){
-        axios.post("https://diary-app-backend-5dk0wdw5k-jedidiah-franciscos-projects.vercel.app/v1/entries/viewOne/"+id, {}, {headers:{Authorization:`Bearer ${user.accessToken}`}})
+        axios.post("https://diary-app-backend-5dk0wdw5k-jedidiah-franciscos-projects.vercel.app/api/v1/entries/viewOne/"+id, {}, {headers:{Authorization:`Bearer ${user.accessToken}`}})
         .then((result)=>{
             setEntry(result.data.data);
         })
@@ -76,7 +76,7 @@ function ViewEntry(){
         setDeleteDialogName(defaultDeleteDialogClass);
     }
     async function handleActualDelete(){
-        axios.put("https://diary-app-backend-5dk0wdw5k-jedidiah-franciscos-projects.vercel.app/v1/entries/delete/"+id, {}, {headers:{Authorization:`Bearer ${user.accessToken}`}}).then(()=>{
+        axios.put("https://diary-app-backend-5dk0wdw5k-jedidiah-franciscos-projects.vercel.app/api/v1/entries/delete/"+id, {}, {headers:{Authorization:`Bearer ${user.accessToken}`}}).then(()=>{
             navigate("/allEntries");
         })
     }

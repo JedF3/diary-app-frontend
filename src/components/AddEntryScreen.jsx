@@ -116,7 +116,7 @@ function AddEntryScreen(){
                 data.append("entry-img", selectedImg);
             }
             if(!updateMode){
-                axios.post("https://diary-app-backend-5dk0wdw5k-jedidiah-franciscos-projects.vercel.app/v1/entries/addEntry", data, { headers: { Authorization: `Bearer ${user.accessToken}` } })
+                axios.post("https://diary-app-backend-5dk0wdw5k-jedidiah-franciscos-projects.vercel.app/api/v1/entries/addEntry", data, { headers: { Authorization: `Bearer ${user.accessToken}` } })
                 .then((result)=>{
                     newEntry=result.data.data._id;
                     navigate(`../viewEntry/${newEntry}`);
@@ -125,7 +125,7 @@ function AddEntryScreen(){
                 });
             }
             else{
-                axios.put("https://diary-app-backend-5dk0wdw5k-jedidiah-franciscos-projects.vercel.app/v1/entries/edit/"+location.state._id, data, { headers: { Authorization: `Bearer ${user.accessToken}` } })
+                axios.put("https://diary-app-backend-5dk0wdw5k-jedidiah-franciscos-projects.vercel.app/api/v1/entries/edit/"+location.state._id, data, { headers: { Authorization: `Bearer ${user.accessToken}` } })
                 .then((result)=>{
                     newEntry=result.data.id;
                     navigate(`../viewEntry/${newEntry}`);
