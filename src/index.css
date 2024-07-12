@@ -1,0 +1,444 @@
+*{
+  box-sizing: border-box;
+}
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.useFont{
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+}
+p{
+  color: black;
+}
+h1 {
+  font-size: 3.2em;
+  color: black;
+}
+.dialogh2{
+  color: black;
+}
+button {
+  border-radius: 8px;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: rgb(32, 78, 76);
+  cursor: pointer;
+  transition: border-color 0.25s;
+  color:white
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.LoginForm{
+  display:flex;
+  flex-flow: column nowrap;
+  gap:1em;
+  padding:3%;
+  background-color: white;
+  width:30em
+}
+
+.MaterialShadow{
+  box-shadow: 0 2px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.RoundedCorner{
+  border-radius: 10px;
+}
+.container{
+  width:100vw;
+  background-color: #213547;
+}
+.loginFormLabel{
+  align-self: flex-start;
+}
+.TitleBar{
+   width:100%;
+   position: fixed;
+   top: 0px;
+   display: flex;
+   flex-flow: row nowrap;
+   background-color: #213547;
+   color:white;
+   height:5em;
+   padding-left:2%;
+   padding-right: 3%;
+   justify-content: space-between;
+}
+.content{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  background-color: antiquewhite;
+  margin-top: 5em;
+  height:95vh;
+  overflow-y: scroll;
+}
+.fullHeight{
+  height:100vh;
+}
+.LoginDiv{
+  background-color: white;
+  color: black;
+  width:fit-content;
+}
+label{
+  color:black;
+}
+
+.confirmWindowBackdrop{
+  position:fixed;
+  top:0px;
+  left:0px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width:100vw;
+  height:100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hide{
+  visibility: hidden;
+}
+.show{
+  visibility: visible;
+}
+
+.RegisterConfirmMessage{
+  font-size: 4em;
+}
+.shortNav{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width:100%;
+}
+.DisplayDiv{
+  width:70vw;
+  height:90vh;
+  display:flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  gap:10px;
+  margin-top: 5em;
+  margin-bottom: 5%;
+}
+
+.EntryDisplayDiv{
+  min-height: 10em;
+  width:100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  padding-left: 2%;
+  padding-right: 2%;
+  gap:5%;
+  background-color: white;
+  color:black;
+  flex:1 0 auto;
+}
+
+.DashDisplayDiv{
+  min-height: 10em;
+  width:100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  padding-left: 2%;
+  padding-right: 2%;
+  gap:5%;
+  background-color: white;
+  color:black;
+}
+.EmotionDisplayDiv{
+  min-height: 10em;
+  width:100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+.DashItemDiv{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  width:100%;
+}
+.StandardDisplayDiv{
+  min-height: 10em;
+  width:100%;
+  height: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding-left: 2%;
+  padding-right: 2%;
+  gap:10px;
+  background-color: white;
+  color:black;
+  flex: 1 0 auto;
+}
+.EntryNavigation{
+  display: flex;
+  flex-flow: row nowrap;
+  width:100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.SubtagDiv{
+  width:100%;
+  display: flex;
+  flex-flow: row nowrap;
+  gap:5%;
+}
+.Subtags{
+  min-width: 3em;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  height:3em;
+  vertical-align: middle;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border:0px;
+  background-color:lightskyblue;
+  padding:2%;
+}
+.LastEntryLabel{
+  font-size: 2em;
+  align-self: flex-start;
+  color:black
+}
+.smileys{
+  width: 10em;
+  height: 10em;
+  object-fit:contain;
+}
+.Active{
+  background-color: red;
+}
+.Inactive{
+  background-color: gray;
+}
+.ViewEntryTextContent{
+  font-weight: normal;
+  align-self: flex-start;
+  margin-bottom: 5%;
+}
+
+.entryTitle{
+  font-size:4em;
+}
+.noResize{
+  resize: none;
+  padding-top: auto;
+  padding-bottom: auto;
+}
+.EntrysubDivDate{
+    flex-basis: 10%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content:center;
+    gap:1px;
+}
+.EntrysubDivSmiley{
+    width:15%;
+}
+.EntrysubDivTitle{
+    width:60%;
+    overflow-wrap: anywhere;
+}
+.EntryTitleInput{
+  width:100%;
+  height:4.5em;
+  font-size:2em;
+  font-weight: bold;
+  border: 0px;
+}
+.EntryTextContentDiv{
+  width:100%;
+  height:auto;
+  min-height: 2em;
+  min-width: 100%;
+  display: flex;
+  flex-flow: row;
+  align-items: flex-start;
+}
+.LastEntryDate{
+  width:auto;
+  height: auto;
+  margin: 0px;
+}
+
+.LastEntryTitle{
+  font-size: 2em;
+}
+
+.EntryImg{
+  height:100%;
+  width:100%;
+  object-fit: contain;
+}
+.EntryImageContainer{
+  width:100%;
+  min-width: 0;
+  min-height: 0;
+  align-self: flex-start;
+}
+.entryText{
+  width:100%;
+  
+}
+.forBorder{
+  border-bottom: 3px solid rgba(0, 0, 0, 0.6);
+}
+
+ol{
+  color:black
+}
+
+.AddEntryQA{
+  display:flex;
+  flex-flow: column nowrap;
+  width:100%;
+  min-width: 0;
+  min-height: 0;
+  padding-bottom: 1%;
+}
+
+.AddanImage{
+  width:100%;
+  height:100%;
+  object-fit: contain;
+}
+.AddSelectButtons{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  width:100%;
+  margin-bottom: 2%;
+}
+.AddEntryTitleInput{
+  min-height: 0;
+  width:100%;
+  height:2em;
+  font-size:2em;
+  font-weight: bold;
+}
+.AddEntryInputTextField{
+  width:100%;
+}
+
+.AddEntryTextArea{
+  width:100%;
+  min-height: 5em;
+  resize: vertical;
+  margin-bottom: 2%;
+}
+
+.EmotionImages{
+  width:7em;
+  height:7em;
+  pointer-events: none;
+}
+
+.EmotionDivs:hover{
+  box-shadow: 0 2px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.HighlightedEmotionImages{
+  border:2px solid greenyellow;
+}
+
+.DateButton{
+  border:3px solid #213547;
+  width:8em;
+}
+
+.DateButton:hover{
+  border:3px solid greenyellow;
+}
+
+.HighlightedDateButton{
+  background-color: greenyellow;
+  width:8em;
+}
+.AddImage{
+  background-color: lightgrey;
+}
+.ImageAdded{
+  background-color: greenyellow;
+}
+input[type="file"]{
+  display:none;
+}
+img[src=""] {
+  display: none;
+}
+.SubmitAddEditButton{
+  width:30%;
+  align-self: center;
+}
+.LogoutButton{
+  height:100%;
+  border-radius: 5px;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.LogoutButton:hover{
+  background-color: white;
+  color:black;
+}
+form{
+  margin-bottom: 5em;
+}
+.usernameLogoutToo{
+  display: flex;
+  flex-flow: row nowrap;
+  width:20%;
+  justify-content: center;
+  align-items: flex-end;
+  height:100%;
+}
+
+.username{
+  display: flex;
+  flex-flow: row nowrap;
+  align-self: flex-end;
+  height:100%;
+}
