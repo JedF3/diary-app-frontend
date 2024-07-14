@@ -1,8 +1,8 @@
-# React + Vite
+# Mental Health Diary App
+You can use this app to write down diary entries, you can put down notes and add images, and track your feelings across a certain amount of time. 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## How to use
+At the home page you will be able to see your last registered diary entry, a button to view all entries and a button to add a new entry. 
+Further below you will be able to see a line graph of your feelings during the past 7 days. 
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+You can also edit existing entries. But for accuracy of recorded feelings, you may only add entries for the current day and for the previous day. 
